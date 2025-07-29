@@ -25,11 +25,11 @@ const Navbar = () => {
 
 
   return (
-    <header className={`bg-transparent absolute top-0 left-0 w-full flex z-10 ${active? "fixed bg-zinc-950 i border-1 my-5 rounded-3xl  ":""}`}>
+    <header className={` bg-transparent  top-0 left-0 w-full flex z-50  ${active? "fixed bg-zinc-950 border-1 my-3 rounded-3xl ":""}`}>
         <div className={`container ${active? "max-w-4xl mx-auto flex":""}`}>
             <div className="flex items-center justify-between relative w-full">
                 <div className="px-4">
-                    <a href="#home" className="primary bg-clip-text font-semibold text-2xl py-5 block"> Lefi's Portfolio</a>
+                    <a href="#home" className="primary bg-clip-text font-semibold md:text-3xl text-2xl py-5 block"> Lefi's Portfolio</a>
                 </div>
                 <div className="flex items-center px-4">
                     <button onClick={()=> {
@@ -45,16 +45,16 @@ const Navbar = () => {
                 <nav class={`lg:block lg:static lg:max-w-full ${menuActive? "block absolute py-3 bg-zinc-800 shadow-zinc-300 shadow-sm rounded-lg max-w-[200px] w-full right-4 top-full ":"hidden"}`}>
                     <ul className="block lg:flex">
                         <li className="group">
-                            <a href="#" className="text-md font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">About</a>
+                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">About</a>
                         </li>
                         <li className="group">
-                            <a href="#" className="text-md font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Project</a>
+                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Project</a>
                         </li>
                         <li className="group">
-                            <a href="#" className="text-md font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Achievement</a>
+                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Achievement</a>
                         </li>
                         <li className="group">
-                            <a href="#" className="text-md font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Contact</a>
+                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Contact</a>
                         </li>
                     </ul>
                 </nav>
