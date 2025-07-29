@@ -6,9 +6,6 @@
     html {
         scroll-behavior: smooth;
     }
-    .navbar-fixed {
-        @apply fixed z-50 bg-red-500;
-    }
     .hamburger-line {
         @apply w-[30px] h-[2px] my-2 block bg-amber-50 transition duration-300 ease-in-out;
     }

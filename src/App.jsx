@@ -1,4 +1,5 @@
 import DataImage from "./data";
+import { listProyek } from "./data";
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
           Study Program: </p>
           <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Information System</p>
           <p className="text-2xl font-semibold primary bg-clip-text">
-          Full Name: </p>
+          Address: </p>
           <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Bu Nining Kost, Beji, Depok</p>
           
         </div>
@@ -52,10 +53,20 @@ function App() {
 
 
     {/* Projects   Section */}
-
-    
-
-
+    <div className="projects mt-32 mb-20 text-4xl font-semibold primary-2 bg-clip-text justify-center flex">My Projects</div>
+      <div className="container">
+        <div className="project-box grid grid-cols-3 gap-7 bg-zinc-950 py-10 rounded-2xl">
+          {listProyek.map((proyek)=> (
+            <div key={proyek.id} className=" bg-zinc-900 rounded-xl mx-3">
+              <img src={proyek.gambar} alt="" className="rounded-xl" />
+              <div>
+                <h2 className="flex justify-center pt-5 pb-3 text-xl font-semibold primary bg-clip-text">{proyek.nama}</h2>
+                <p className="flex text-center text-gray-400 pb-5">{proyek.desk}</p>
+              </div>
+            </div>              
+          ))}
+        </div>
+      </div>
 
     </>
     
