@@ -3,6 +3,9 @@
     body {
         font-family: "Poppins", sans-serif;
     }
+    html {
+        scroll-behavior: smooth;
+    }
     .navbar-fixed {
         @apply fixed z-50 bg-red-500;
     }
@@ -22,8 +25,15 @@
     .primary {
         @apply bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-transparent; 
     }
+    .primary-2 {
+        @apply bg-gradient-to-t from-yellow-500 via-red-500 to-pink-500 text-transparent; 
+    }
     .group-hover\:primary:hover {
         @apply bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-transparent;
+    }
+    .smooth {
+        @apply transition-all duration-300 ease-in-out;
+
     }
     
 }

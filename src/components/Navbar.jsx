@@ -7,7 +7,7 @@ const Navbar = () => {
 
     useEffect (()=> {
         const handleScroll = ()=> {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 150) {
                 setActive(true);
             } else {
                 setActive(false);
@@ -25,8 +25,8 @@ const Navbar = () => {
 
 
   return (
-    <header className={` bg-transparent  top-0 left-0 w-full flex z-50  ${active? "fixed bg-zinc-950 border-1 my-3 rounded-3xl ":""}`}>
-        <div className={`container ${active? "max-w-4xl mx-auto flex":""}`}>
+    <header className={` bg-transparent  top-0 left-0 w-full flex z-50 transition-all duration-300 ease-in-out ${active? "fixed bg-zinc-950 border-1 border-yellow-500 my-3 rounded-3xl mx-auto flex justify-center px-4":""}`}>
+        <div className={`container ${active? "":""}`}>
             <div className="flex items-center justify-between relative w-full">
                 <div className="px-4">
                     <a href="#home" className="primary bg-clip-text font-semibold md:text-3xl text-2xl py-5 block"> Lefi's Portfolio</a>
@@ -36,26 +36,27 @@ const Navbar = () => {
                         setHamburgerActive(!hamburgerActive); 
                         setMenuActive(!menuActive);
                     }}
-                        id="hamburger" name="hamburger" type="button" className="block absolute right-4 lg:hidden">
-                        <span className={`hamburger-line origin-top-left ${hamburgerActive? "hamburger-active-1":""}`}></span>
+                        id="hamburger" name="hamburger" type="button" className="block absolute right-4 lg:hidden ">
+                        <span className={`hamburger-line origin-top-left ${hamburgerActive? "hamburger-active-1 bg-red-700":""}`}></span>
                         <span className={`hamburger-line ${hamburgerActive? "hamburger-active-2":""}`}></span>
-                        <span className={`hamburger-line origin-bottom-left  ${hamburgerActive? "hamburger-active-3":""}`}></span>
+                        <span className={`hamburger-line origin-bottom-left  ${hamburgerActive? "hamburger-active-3 bg-red-700":""}`}></span>
                     </button>
                 </div>
-                <nav class={`lg:block lg:static lg:max-w-full ${menuActive? "block absolute py-3 bg-zinc-800 shadow-zinc-300 shadow-sm rounded-lg max-w-[200px] w-full right-4 top-full ":"hidden"}`}>
+                <nav class={`lg:block lg:static lg:max-w-full ${menuActive? "block absolute py-3 bg-zinc-950 shadow-zinc-300 shadow-sm rounded-lg max-w-[200px] w-full right-4 top-full ":"hidden"}`}>
                     <ul className="block lg:flex">
                         <li className="group">
-                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">About</a>
+                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-user-fill"></i>About</a>
                         </li>
                         <li className="group">
-                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Project</a>
+                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i class="ri-computer-fill"></i>Projects</a>
                         </li>
                         <li className="group">
-                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Achievement</a>
+                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i class="ri-medal-fill"></i>Achievements</a>
                         </li>
                         <li className="group">
-                            <a href="#" className="text-lg font-semibold py-1 px-5 group-hover:primary bg-clip-text flex">Contact</a>
+                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i class="ri-phone-fill"></i>Contact</a>
                         </li>
+                        
                     </ul>
                 </nav>
             </div>
