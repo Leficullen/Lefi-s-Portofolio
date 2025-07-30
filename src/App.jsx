@@ -1,4 +1,4 @@
-import DataImage, { listVideo } from "./data";
+import DataImage, { listGraphic, listVideo } from "./data";
 import { listProyek } from "./data";
 
 function App() {
@@ -75,18 +75,29 @@ function App() {
       </div>
     <p className="text-2xl flex justify-center mb-10 text-gray-500 my-10">Video Projects:</p>
     <div className="container">
-      <div className="project-box grid grid-cols-3 bg-zinc-950 gradient-border-container py-10 px-4">
+      <div className="project-box grid lg:grid-cols-3 grid-cols-1 bg-zinc-950 gradient-border-container py-10 px-4">
         {listVideo.map((video) => (
           <div key={video.id} className="rounded-xl bg-zinc-900 m-3 hover:scale-105 smooth hover:border">
             <video src={video.tampilan} autoPlay muted loop playsInline className="w-[400px]  rounded-xl"></video>
             <div>
-              <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3">{video.nama}</h2>
+              <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3 text-center">{video.nama}</h2>
               <p className="text-gray-500 justify-center text-center flex pb-5">{video.desk}</p>
             </div>
-
-            
           </div>
-
+        ))}
+      </div>
+    </div>
+    <p className="text-2xl flex justify-center mb-10 text-gray-500 my-10">Graphic Projects:</p>
+    <div className="container">
+      <div className="project-box grid lg:grid-cols-3 grid-cols-1 text-center bg-zinc-950 gradient-border-container py-10 px-4">
+        {listGraphic.map((graphic) => (
+          <div key={graphic.id} className="rounded-xl bg-zinc-900 m-3 hover:scale-105 smooth hover:border">
+            <img src={graphic.tampilan} alt="" className="rounded-xl" />
+            <div>
+              <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3">{graphic.nama}</h2>
+              <p className="text-gray-500 justify-center text-center flex pb-5">{graphic.desk}</p>
+            </div>
+          </div>
         ))}
       </div>
     </div>

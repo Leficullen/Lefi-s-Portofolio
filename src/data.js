@@ -183,4 +183,32 @@ export const listVideo = [
   },
 ];
 
+import Graphic1 from "/assets/graphic/graphic1.png";
+import Graphic2 from "/assets/graphic/graphic2.png";
+import Graphic3 from "/assets/graphic/graphic3.png";
+
+export const listGraphic = [
+  {
+    id: 1,
+    tampilan: Graphic1,
+    nama: `"Eco Ramadhan" Poster`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 100,
+  },
+  {
+    id: 2,
+    tampilan: Graphic2,
+    nama: `"Man of the Match" Flyer`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 200,
+  },
+  {
+    id: 1,
+    tampilan: Graphic3,
+    nama: `"Ektansyar" Cover`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 300,
+  }
+]
+
 
