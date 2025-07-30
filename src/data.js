@@ -211,4 +211,115 @@ export const listGraphic = [
   }
 ]
 
+import Achievement1 from "/assets/achievements/achievement1.jpg";
+import Achievement2 from "/assets/achievements/achievement2.jpg";
+import Achievement3 from "/assets/achievements/achievement3.jpg";
+import Achievement4 from "/assets/achievements/achievement4.jpg";
+import Achievement5 from "/assets/achievements/achievement5.jpg";
+import Achievement6 from "/assets/achievements/achievement6.jpg";
+import Achievement7 from "/assets/achievements/achievement7.jpg";
+import Achievement8 from "/assets/achievements/achievement8.jpg";
+import Achievement9 from "/assets/achievements/achievement9.jpg";
+import Achievement10 from "/assets/achievements/achievement10.jpg";
+import Achievement11 from "/assets/achievements/achievement11.jpg";
+import Achievement12 from "/assets/achievements/achievement12.jpg";
+import Achievement13 from "/assets/achievements/achievement13.jpg";
+import Achievement14 from "/assets/achievements/achievement14.jpg";
+import Achievement15 from "/assets/achievements/achievement15.jpg";
+
+export const listAchievement = [
+  {
+    id: 1,
+    tampilan: Achievement1,
+    juara: "1st Place",
+    nama: "Kompetisi Ekonomi Syariah Nasional 2024",
+  },
+  {
+    id: 2,
+    tampilan: Achievement2,
+    juara: "1st Place",
+    nama: "Olimpiade Tim National Economic for Our Ideas 2024",
+  },
+  {
+    id: 3,
+    tampilan: Achievement3,
+    juara: "2nd Place",
+    nama: "Olimpiade Individu National Economic for Our Ideas 2024",
+  },
+  {
+    id: 4,
+    tampilan: Achievement4,
+    juara: "1st Place",
+    nama: "Widyatama Accounting Competition 2024",
+  },
+  {
+    id: 5,
+    tampilan: Achievement5,
+    juara: "3rd Place",
+    nama: "Olimpiade Ekonomi Universitas Atma Jaya 2023",
+  },
+  {
+    id: 6,
+    tampilan: Achievement6,
+    juara: "Honorable Mention",
+    nama: "Kompetisi Sains Siswa Muslim Indonesia 2024",
+  },
+  {
+    id: 7,
+    tampilan: Achievement7,
+    juara: "1st Place",
+    nama: "Bisnis Digital Got Talent 2023",
+  },
+  {
+    id: 8,
+    tampilan: Achievement8,
+    juara: "1st Place",
+    nama: "Hasanuddin Sharia Economic Festival 2024",
+  },
+  {
+    id: 9,
+    tampilan: Achievement9,
+    juara: "1st Place",
+    nama: "Hasanuddin Sharia Economic Festival 2023",
+  },
+  {
+    id: 10,
+    tampilan: Achievement10,
+    juara: "2nd Place",
+    nama: "Kompetisi Ekonomi Syariah Regional 2024",
+  },
+  {
+    id: 11,
+    tampilan: Achievement11,
+    juara: "2nd Place",
+    nama: "Film Pendek FLS2N Provinsi 2024",
+  },
+  {
+    id: 12,
+    tampilan: Achievement12,
+    juara: "2nd Place",
+    nama: "Kompetisi Sains Madrasah 2024",
+  },
+  {
+    id: 13,
+    tampilan: Achievement13,
+    juara: "1st Place",
+    nama: "Olimpiade Sains Nasional 2024",
+  },
+  {
+    id: 14,
+    tampilan: Achievement14,
+    juara: "1st Place",
+    nama: "Kabupaten Kompetisi Sains Madrasah 2023",
+  },
+  {
+    id: 15,
+    tampilan: Achievement15,
+    juara: "1st Place",
+    nama: "Kabupaten Battle Accounting IAIN Bone 2023",
+  },
+];
+
+
+
 
