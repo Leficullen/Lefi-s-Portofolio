@@ -99,34 +99,88 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
+import Proyek1 from "/assets/proyek/proyek1.png";
+import Proyek2 from "/assets/proyek/proyek2.png";
+import Proyek3 from "/assets/proyek/proyek3.png";
 
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
+    nama: "D Class Portfolio",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS"],
+    tools: ["Google Site"],
     dad: "200",
   },
   {
     id: 2,
     gambar: Proyek2,
-    nama: "Company Profile",
+    nama: "SEA-Catering",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Swiper", "Lightbox Gallery"],
+    tools: ["HTML", "CSS", "Javascript", "PHP"],
     dad: "300",
   },
   {
     id: 3,
     gambar: Proyek3,
-    nama: "Web Pernikahan 2.0",
+    nama: "School Website",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "TailwindCSS", "AOS"],
+    tools: ["Wordpress"],
     dad: "400",
   },
 ];
+
+import Video1 from "/assets/video/video1.mp4";
+import Video2 from "/assets/video/video2.mp4";
+import Video3 from "/assets/video/video3.mp4";
+import Video4 from "/assets/video/video4.mp4";
+import Video5 from "/assets/video/video5.mp4";
+import Video6 from "/assets/video/video6.mp4";
+
+export const listVideo = [
+  {
+    id: 1,
+    tampilan: Video1,
+    nama: `"Gara-Gara Uang Panai" Trailer`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 100,
+  },
+  {
+    id: 2,
+    tampilan: Video2,
+    nama: `"Pemanggilan ke Dalat" Short Movie`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 200,
+  },
+  {
+    id: 3,
+    tampilan: Video3,
+    nama: `"Palsu" Short Movie`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 200,
+  },
+  {
+    id: 4,
+    tampilan: Video4,
+    nama: `"Gara-Gara Uang Panai" Trailer 2`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 200,
+  },
+  {
+    id: 5,
+    tampilan: Video5,
+    nama: `"Sanggara Buk-Buk" Cinematic`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 200,
+  },
+  {
+    id: 6,
+    tampilan: Video6,
+    nama: `"Palsu Part 2" Short Movie`,
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    dad: 200,
+  },
+];
+
+

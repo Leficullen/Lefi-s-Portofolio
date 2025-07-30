@@ -28,9 +28,59 @@
     .group-hover\:primary:hover {
         @apply bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-transparent;
     }
-    .smooth {
+.gradient-border {
+  position: relative;
+  z-index: 0;
+  border-radius: 2rem; 
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 3px; /* ketebalan border */
+  border-radius: inherit;
+  background: linear-gradient(to right, #facc15, #ec4899, #ef4444);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+.gradient-border-container {
+  position: relative;
+  z-index: 0;
+  border-radius: 2rem; 
+}
+.gradient-border-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 5px; /* ketebalan border */
+  border-radius: inherit;
+  background: linear-gradient(to right, #facc15, #ec4899, #ef4444);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.gradient-image {
+  border: 4px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to right, #facc15, #ec4899, #ef4444); /* amber-400, pink-500, red-500 */
+}
+
+.smooth {
         @apply transition-all duration-300 ease-in-out;
 
-    }
+}
+.spin {
+    animation: spin 10s linear infinite
+}
     
 }

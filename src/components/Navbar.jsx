@@ -7,7 +7,7 @@ const Navbar = () => {
 
     useEffect (()=> {
         const handleScroll = ()=> {
-            if (window.scrollY > 150) {
+            if (window.scrollY > 100) {
                 setActive(true);
             } else {
                 setActive(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
 
 
   return (
-    <header className={` bg-transparent  top-0 left-0 w-full flex z-50 transition-all duration-300 ease-in-out ${active? "fixed bg-zinc-950 border-1 border-yellow-500 my-3 rounded-3xl mx-auto flex justify-center px-4":""}`}>
+    <header className={` bg-transparent  top-0 left-0 w-full flex z-50 transition-all duration-300 ease-in-out ${active? "fixed bg-zinc-950 gradient-border my-3 rounded-3xl mx-auto flex justify-center px-4":""}`}>
         <div className={`container ${active? "":""}`}>
             <div className="flex items-center justify-between relative w-full">
                 <div className="px-4">
