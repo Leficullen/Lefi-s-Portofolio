@@ -7,98 +7,6 @@ const Image = {
 
 export default Image;
 
-import Tools1 from "/assets/tools/vscode.png";
-import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/nextjs.png";
-import Tools4 from "/assets/tools/tailwind.png";
-import Tools5 from "/assets/tools/bootstrap.png";
-import Tools6 from "/assets/tools/js.png";
-import Tools7 from "/assets/tools/nodejs.png";
-import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
-import Tools10 from "/assets/tools/canva.png";
-import Tools11 from "/assets/tools/figma.png";
-
-export const listTools = [
-  {
-    id: 1,
-    gambar: Tools1,
-    nama: "Visual Studio Code",
-    ket: "Code Editor",
-    dad: "100",
-  },
-  {
-    id: 2,
-    gambar: Tools2,
-    nama: "React JS",
-    ket: "Framework",
-    dad: "200",
-  },
-  {
-    id: 3,
-    gambar: Tools3,
-    nama: "Next JS",
-    ket: "Framework",
-    dad: "300",
-  },
-  {
-    id: 4,
-    gambar: Tools4,
-    nama: "Tailwind CSS",
-    ket: "Framework",
-    dad: "400",
-  },
-  {
-    id: 5,
-    gambar: Tools5,
-    nama: "Bootstrap",
-    ket: "Framework",
-    dad: "500",
-  },
-  {
-    id: 6,
-    gambar: Tools6,
-    nama: "Javascript",
-    ket: "Language",
-    dad: "600",
-  },
-  {
-    id: 7,
-    gambar: Tools7,
-    nama: "Node JS",
-    ket: "Javascript Runtime",
-    dad: "700",
-  },
-  {
-    id: 8,
-    gambar: Tools8,
-    nama: "Github",
-    ket: "Repository",
-    dad: "800",
-  },
-  {
-    id: 9,
-    gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
-    dad: "900",
-  },
-  {
-    id: 10,
-    gambar: Tools10,
-    nama: "Canva",
-    ket: "Design App",
-    dad: "1000",
-  },
-  {
-    id: 11,
-    gambar: Tools11,
-    nama: "Figma",
-    ket: "Design App",
-    dad: "1100",
-  },
-];
-
 import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/proyek3.png";
@@ -111,6 +19,8 @@ export const listProyek = [
     nama: "D Class Portfolio",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
     tools: ["Google Site"],
+    view: "https://sites.google.com/view/portofolio-informatika-alfi-3/home",
+    status: "",
     dad: "200",
   },
   {
@@ -119,6 +29,8 @@ export const listProyek = [
     nama: "SEA-Catering",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
     tools: ["HTML", "CSS", "Javascript", "PHP"],
+    view: "https://github.com/Leficullen/SEA-Catering",
+    status: "(Hosting Expired)",
     dad: "300",
   },
   {
@@ -127,6 +39,7 @@ export const listProyek = [
     nama: "School Website",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
     tools: ["Wordpress"],
+    status: "",
     dad: "400",
   },
 ];
@@ -213,18 +126,13 @@ export const listGraphic = [
 
 import Achievement1 from "/assets/achievements/achievement1.jpg";
 import Achievement2 from "/assets/achievements/achievement2.jpg";
-import Achievement3 from "/assets/achievements/achievement3.jpg";
 import Achievement4 from "/assets/achievements/achievement4.jpg";
 import Achievement5 from "/assets/achievements/achievement5.jpg";
 import Achievement6 from "/assets/achievements/achievement6.jpg";
 import Achievement7 from "/assets/achievements/achievement7.jpg";
-import Achievement8 from "/assets/achievements/achievement8.jpg";
-import Achievement9 from "/assets/achievements/achievement9.jpg";
-import Achievement10 from "/assets/achievements/achievement10.jpg";
 import Achievement11 from "/assets/achievements/achievement11.jpg";
 import Achievement12 from "/assets/achievements/achievement12.jpg";
 import Achievement13 from "/assets/achievements/achievement13.jpg";
-import Achievement14 from "/assets/achievements/achievement14.jpg";
 import Achievement15 from "/assets/achievements/achievement15.jpg";
 
 export const listAchievement = [
@@ -242,7 +150,7 @@ export const listAchievement = [
   },
   {
     id: 3,
-    tampilan: Achievement3,
+    tampilan: Achievement2,
     juara: "2nd Place",
     nama: "Olimpiade Individu National Economic for Our Ideas 2024",
   },
@@ -272,19 +180,19 @@ export const listAchievement = [
   },
   {
     id: 8,
-    tampilan: Achievement8,
+    tampilan: Achievement2,
     juara: "1st Place",
     nama: "Hasanuddin Sharia Economic Festival 2024",
   },
   {
     id: 9,
-    tampilan: Achievement9,
+    tampilan: Achievement2,
     juara: "1st Place",
     nama: "Hasanuddin Sharia Economic Festival 2023",
   },
   {
     id: 10,
-    tampilan: Achievement10,
+    tampilan: Achievement1,
     juara: "2nd Place",
     nama: "Kompetisi Ekonomi Syariah Regional 2024",
   },
@@ -298,7 +206,7 @@ export const listAchievement = [
     id: 12,
     tampilan: Achievement12,
     juara: "2nd Place",
-    nama: "Kompetisi Sains Madrasah 2024",
+    nama: "Kompetisi Sains Madrasah Provinsi 2024",
   },
   {
     id: 13,
@@ -308,9 +216,9 @@ export const listAchievement = [
   },
   {
     id: 14,
-    tampilan: Achievement14,
+    tampilan: Achievement12,
     juara: "1st Place",
-    nama: "Kabupaten Kompetisi Sains Madrasah 2023",
+    nama: "Kompetisi Sains Madrasah Kabupaten  2023",
   },
   {
     id: 15,

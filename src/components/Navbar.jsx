@@ -42,7 +42,7 @@ const Navbar = () => {
                         <span className={`hamburger-line origin-bottom-left  ${hamburgerActive? "hamburger-active-3 bg-red-700":""}`}></span>
                     </button>
                 </div>
-                <nav class={`lg:block lg:static lg:max-w-full ${menuActive? "block absolute py-3 bg-zinc-950 shadow-pink-500 shadow-sm rounded-lg max-w-[200px] w-full right-4 top-full gradient-border":"hidden"}`}>
+                <nav className={`lg:block lg:static lg:max-w-full z-50 ${menuActive? "block absolute py-3 bg-zinc-950 shadow-pink-500 shadow-sm rounded-lg max-w-[200px] w-full right-4 top-full gradient-border":"hidden"}`}>
                     <ul className="block lg:flex">
                         <li className="group">
                             <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-user-fill"></i>About</a>
@@ -50,7 +50,7 @@ const Navbar = () => {
                         <li className="group">
                             <a href="#project" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-computer-fill"></i>Projects <i className="ri-arrow-down-s-line ri-sm group-hover:rotate-180 smooth tra invisible lg:visible"></i>
                             </a>
-                            <ul className="absolute right-80 mt-2 w-32 bg-zinc-950 border border-zinc-700 rounded-md p-3 shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible smooth z-50 gradient-border">
+                            <ul className="absolute right-80 mt-2 w-32 bg-zinc-950 border border-zinc-700 rounded-md p-3 shadow-lg opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible smooth z-50 gradient-border">
                                 <li className="group"> <a href="#project-website" className=" p-2 text-base font-semibold group-hover:primary bg-clip-text smooth block hover:scale-105">Website</a></li>
                                 <li className="group"> <a href="#project-video" className=" p-2 text-base font-semibold group-hover:primary bg-clip-text smooth block hover:scale-105">Video</a></li>
                                 <li className="group"> <a href="#project-graphic" className=" p-2 text-base font-semibold group-hover:primary bg-clip-text smooth block hover:scale-105">Graphic</a></li>
@@ -59,10 +59,10 @@ const Navbar = () => {
                             
                         </li>
                         <li className="group">
-                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i class="ri-medal-fill"></i>Achievements</a>
+                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-medal-fill"></i>Achievements</a>
                         </li>
                         <li className="group">
-                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i class="ri-phone-fill"></i>Contact</a>
+                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-phone-fill"></i>Contact</a>
                         </li>
                         
                     </ul>

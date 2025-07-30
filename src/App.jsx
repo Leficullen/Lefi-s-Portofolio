@@ -1,5 +1,4 @@
-import DataImage, { listAchievement, listGraphic, listVideo } from "./data";
-import { listProyek } from "./data";
+import DataImage from "./data";
 
 function App() {
   return (
@@ -17,8 +16,8 @@ function App() {
           <div className="mb-5">
             <p className="text-xl text-gray-500 text-center lg:text-left ">I'm a software engineer and a New Student of Indonesia University with Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore excepturi totam quis tempora, autem numquam itaque molestiae iure. Explicabo facere nisi omnis illo similique, assumenda optio dolorum ipsum laudantium minima? </p>
           </div>
-          <div className="bg-pink-700 w-fit p-3 rounded-md items hover:bg-pink-900 smooth hover:scale-105 mx-auto lg:mx-0 font-semibold" >
-            <a href="#about" className=""> <i className="ri-arrow-down-double-line ri-lg "></i> Explore Me!</a>
+          <div className="bg-zinc-800 w-fit p-3 rounded-md  hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 smooth hover:scale-105 mx-auto lg:mx-0 font-semibold shadow-xl" >
+            <a href="#about" className="">Explore Me! <i class="ri-arrow-down-double-fill ri-lg"></i></a>
 
           </div>
         </div>
@@ -53,77 +52,9 @@ function App() {
 
 
     {/* Projects   Section */}
-    <div id="project" className="projects mt-32 mb-5 text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-40">My Projects</div>
-    <p id="project-website" className="text-2xl flex justify-center mb-10 text-gray-400 scroll-mt-27">Website Projects:</p>
-      <div className="container group">
-        <div className="project-box grid lg:grid-cols-3 grid-cols-1 gap-10 lg:gap-0 bg-zinc-950 gradient-border-container p-5 py-10 rounded-2xl">
-          {listProyek.map((proyek)=> (
-            <div key={proyek.id} className=" bg-zinc-900 rounded-xl mx-5 hover:scale-105 smooth hover:border-3">
-              <img src={proyek.gambar} alt="" className="rounded-xl " />
-              <div>
-                <h2 className="flex justify-center pt-5 pb-3 text-xl font-semibold primary bg-clip-text">{proyek.nama}</h2>
-                <p className="flex text-center justify-center text-gray-300 pb-5">{proyek.desk}</p>
-                <div className="flex flex-wrap">
-                  {proyek.tools.map((tool, index) =>(
-                    <p key={index} className="px-3 hover:scale-110 smooth gradient-border   rounded-md font-semibold mx-auto justify-center flex mb-5">{tool}</p>
-                  ))}
-                </div>
-              </div>
-            </div>              
-          ))}
-        </div>
-      </div>
-    <p id="project-video"className="text-2xl flex justify-center mb-10 text-gray-300 my-10 scroll-mt-27">Video Projects:</p>
-    <div className="container">
-      <div className="project-box grid lg:grid-cols-3 grid-cols-1 bg-zinc-950 gradient-border-container py-10 px-4">
-        {listVideo.map((video) => (
-          <div key={video.id} className="rounded-xl bg-zinc-900 m-3 hover:scale-105 smooth border-2 border-zinc-900 hover:border-2 hover:border-white">
-            <video src={video.tampilan} autoPlay muted loop playsInline className="lg:w-[400px] w-full  rounded-xl"></video>
-            <div>
-              <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3 text-center">{video.nama}</h2>
-              <p className="text-gray-500 justify-center text-center flex pb-5">{video.desk}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-    <p id="project-graphic"className="text-2xl flex justify-center mb-10 text-gray-300 my-10 scroll-mt-27">Graphic Projects:</p>
-    <div className="container">
-      <div className="project-box grid lg:grid-cols-3 grid-cols-1 text-center bg-zinc-950 gradient-border-container lg:py-10 py-3 px-4">
-        {listGraphic.map((graphic) => (
-          <div key={graphic.id} className="rounded-xl bg-zinc-900 mx-3 scale-90 hover:scale-95 smooth hover:border-3">
-            <img src={graphic.tampilan} alt="" className="rounded-xl" />
-            <div>
-              <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3">{graphic.nama}</h2>
-              <p className="text-gray-500 justify-center text-center flex pb-5">{graphic.desk}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
 
     {/* Achievement Section */}
-    <div className="projects mt-32 mb-5 text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-40 mb-10"> My Achievements</div>
-    <div className="container">
-      <div className="achievement-box grid-cols-1 md:grid-cols-4 grid bg-zinc-950 p-5 gradient-border-container" >
-        {listAchievement.map((achievement) => (
-          <div key={achievement.id} className="bg-zinc-900 flex rounded-xl m-4 items-center p-3 hover:scale-105 smooth border-2 border-zinc-900 hover:border-white hover:border-2">
-            <img src={achievement.tampilan} alt="" className="rounded-full w-[60px] my-auto" />
-            <div className="mx-2">
-              <h2 className=" primary bg-clip-text font-semibold">{achievement.juara}</h2>
-              <p className="text-sm text-gray-500">{achievement.nama}</p>
-              
-            </div>
-            
-
-          </div>
-
-        ))}
-      </div>
-
-    </div>
     
-
     </>
     
   )
