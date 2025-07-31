@@ -39,6 +39,7 @@ export const listProyek = [
     nama: "School Website",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
     tools: ["Wordpress"],
+    view: "https://alfirizqy2007.wordpress.com/",
     status: "",
     dad: "400",
   },
@@ -116,7 +117,7 @@ export const listGraphic = [
     dad: 200,
   },
   {
-    id: 1,
+    id: 3,
     tampilan: Graphic3,
     nama: `"Ektansyar" Cover`,
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",

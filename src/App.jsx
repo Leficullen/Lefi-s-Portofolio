@@ -17,7 +17,7 @@ function App() {
             <p className="text-xl text-gray-500 text-center lg:text-left ">I'm a software engineer and a New Student of Indonesia University with Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore excepturi totam quis tempora, autem numquam itaque molestiae iure. Explicabo facere nisi omnis illo similique, assumenda optio dolorum ipsum laudantium minima? </p>
           </div>
           <div className="bg-zinc-800 w-fit p-3 rounded-md  hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 smooth hover:scale-105 mx-auto lg:mx-0 font-semibold shadow-xl" >
-            <a href="#about" className="">Explore Me! <i class="ri-arrow-down-double-fill ri-lg"></i></a>
+            <a href="#about" className="">Explore Me! <i className="ri-arrow-down-double-fill ri-lg"></i></a>
 
           </div>
         </div>
@@ -25,9 +25,9 @@ function App() {
 
     {/* About Section */}
     <div id="about" className="tittle flex mt-32 mb-10 text-4xl mx-auto w-full justify-center primary-2 bg-clip-text font-semibold scroll-mt-40 ">About Me</div>
-    <div className="container flex justify-center p-1 primary w-fit mx-auto rounded-3xl " id="about">
-      <div className="in-container bg-zinc-950 rounded-3xl flex flex-col md:flex-row gradient-border hover:scale-105 smooth">
-        <div className="description p-10 flex items-justify flex-col justify-center">
+    <div className="container flex justify-center p-1 primary sm:w-fit w-full mx-auto rounded-3xl " id="about">
+      <div className="in-container bg-zinc-950 rounded-3xl flex flex-col md:flex-row gradient-border hover:scale-105 smooth ">
+        <div className="description p-10 flex items-justify flex-col justify-center ">
           <p className="text-2xl font-semibold primary bg-clip-text">
           Full Name: </p>
           <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Muh. Alfi Rizqy</p>
@@ -54,7 +54,8 @@ function App() {
     {/* Projects   Section */}
 
     {/* Achievement Section */}
-    
+
+    {/* Contact Section */}
     </>
     
   )

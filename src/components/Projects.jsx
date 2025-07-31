@@ -1,13 +1,9 @@
-import {useState} from "react";
 import { listProyek } from "../data";
 import { listVideo } from "../data";
 import { listGraphic } from "../data";
 
 const Projects = () => {
-  const [showMore, setShowMore] = useState(false);
-  const visibleAchievements = showMore? listVideo : listVideo.slice(0,3);
-
- return (
+    return (
     <div>
         <div id="project" className="projects mt-32 mb-5 text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-40">My Projects</div>
         <p id="project-website" className="text-2xl flex justify-center mb-10 text-gray-400 scroll-mt-27">Website Projects:</p>
@@ -24,8 +20,8 @@ const Projects = () => {
                         <p key={index} className="px-3 hover:scale-110 smooth gradient-border rounded-md font-semibold mx-auto justify-center flex mb-5">{tool}</p>
                     ))}
                     </div>
-                    <div className="flex justify-center mb-3 bg-zinc-700 rounded-sm px-5 py-1 font-semibold mx-auto w-fit hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 hover:scale-105 smooth shadow-xl">
-                    <a href={proyek.view} target="_blank" className="">Visit <i class="ri-eye-line"></i></a>
+                    <div className="flex justify-center mb-3 bg-zinc-800 rounded-sm px-5 py-1 font-semibold mx-auto w-fit hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 hover:scale-105 smooth shadow-xl">
+                    <a href={proyek.view} target="_blank" className="">Visit <i className="ri-eye-line"></i></a>
                     </div>
                     <p className="justify-center flex mb-5 text-red-500">{proyek.status}</p>
                 </div>
@@ -47,7 +43,7 @@ const Projects = () => {
             ))}
         </div>
         </div>
-        <p id="project-graphic"className="text-2xl flex justify-center mb-10 text-gray-300 my-10 scroll-mt-27">Graphic Projects:</p>
+        <p id="project-graphic" className="text-2xl flex justify-center mb-10 text-gray-300 my-10 scroll-mt-27">Graphic Projects:</p>
         <div className="container">
         <div className="project-box grid lg:grid-cols-3 grid-cols-1 text-center bg-zinc-950 gradient-border-container lg:py-10 py-3 px-4">
             {listGraphic.map((graphic) => (
@@ -62,7 +58,7 @@ const Projects = () => {
         </div>
         </div>
     </div>
- )
-};
+ );
+}
 
 export default Projects;

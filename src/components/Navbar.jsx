@@ -22,14 +22,12 @@ const Navbar = () => {
 
     }, [] );
 
-
-
   return (
     <header className={` bg-transparent  top-0 left-0 w-full flex z-50 transition-all duration-300 ease-in-out ${active? "fixed bg-zinc-950 gradient-border my-3 rounded-3xl mx-auto flex justify-center px-4":""}`}>
         <div className={`container ${active? "":""}`}>
             <div className="flex items-center justify-between relative w-full">
                 <div className="px-4">
-                    <a href="#home" className="primary bg-clip-text font-semibold md:text-3xl text-2xl py-5 block hover:scale-105 smooth"> Leficullen</a>
+                    <a href="#" className="primary bg-clip-text font-semibold md:text-3xl text-2xl py-5 block hover:scale-105 smooth"> Leficullen</a>
                 </div>
                 <div className="flex items-center px-4">
                     <button onClick={()=> {
@@ -59,10 +57,10 @@ const Navbar = () => {
                             
                         </li>
                         <li className="group">
-                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-medal-fill"></i>Achievements</a>
+                            <a href="#achievements" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-medal-fill"></i>Achievements</a>
                         </li>
                         <li className="group">
-                            <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-phone-fill"></i>Contact</a>
+                            <a href="#contact" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-phone-fill"></i>Contact</a>
                         </li>
                         
                     </ul>
