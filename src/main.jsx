@@ -6,7 +6,7 @@ import Navbar from './components/Navbar.jsx'
 import Projects from './components/Projects.jsx'
 import Achievements from './components/Achievements.jsx'
 import Contact from './components/Contact.jsx'
-import Footer from './components/Footer.jsx'
+import Footer from './components/footer.jsx'
 import Loading from './components/Loading.jsx'
 
 import 'animate.css';
