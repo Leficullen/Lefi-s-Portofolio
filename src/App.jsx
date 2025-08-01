@@ -4,8 +4,8 @@ function App() {
   return (
     <>
     {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row justify-center gap-8 ">
-        <img src={DataImage.HeroImage} alt="" className="w-[500px] md:mr-auto mx-auto my-auto flex hover:scale-105 smooth animate__animated animate__fadeInUp animate__delay-2s"/>
+      <div className="flex flex-col lg:flex-row justify-center gap-8 animate__animated animate__fadeInUp animate__delay-2s smooth ">
+        <img src={DataImage.HeroImage} alt="" className="w-[500px] md:mr-auto mx-auto my-auto flex hover:scale-105 smooth "/>
         <div className="justify-center flex-col flex ">
           <div className="p-1 primary w-fit rounded-md h-fit my-3 lg:mx-0 mx-auto hover:scale-105 transition-all ease-in-out duration-300">
             <div className="bg-zinc-800 w-fit p-3 rounded-md">
