@@ -2,10 +2,10 @@ const Contact = () => {
     return (
     <div>
         <div>
-            <div id="contact" className="mt-32  text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-40 mb-10"> Contact Me
+            <div id="contact" className="mt-32  text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-32 mb-10" data-aos="fade-down"> Contact Me
             </div>
             <div className="flex justify-center ">
-                <form action="https://formsubmit.co/alfirizqy2007@gmail.com" method="POST" className="flex flex-col justify-center sm:w-fit w-full bg-zinc-950 p-10 rounded-xl gradient-border-container" autoComplete="off">
+                <form action="https://formsubmit.co/alfirizqy2007@gmail.com" method="POST" className="flex flex-col justify-center sm:w-fit w-full bg-zinc-950 p-10 rounded-xl gradient-border-container gap-3" autoComplete="off" data-aos="zoom-in">
                     <div className="flex flex-col gap-1">
                         <label htmlFor="" className="font-semibold primary-2 bg-clip-text text-xl">Full Name</label>
                         <input type="text" name="Name" placeholder="Enter your name here..." className="border border-zinc-600 rounded-md p-2" required />

@@ -4,9 +4,9 @@ function App() {
   return (
     <>
     {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row justify-center gap-8">
-        <img src={DataImage.HeroImage} alt="" className="w-[500px] md:mr-auto mx-auto my-auto flex hover:scale-105 smooth" />
-        <div className="justify-center flex-col flex">
+      <div className="flex flex-col lg:flex-row justify-center gap-8 ">
+        <img src={DataImage.HeroImage} alt="" className="w-[500px] md:mr-auto mx-auto my-auto flex hover:scale-105 smooth animate__animated animate__fadeInUp animate__delay-2s"/>
+        <div className="justify-center flex-col flex ">
           <div className="p-1 primary w-fit rounded-md h-fit my-3 lg:mx-0 mx-auto hover:scale-105 transition-all ease-in-out duration-300">
             <div className="bg-zinc-800 w-fit p-3 rounded-md">
               <q className="text-xl text-white">Welcome to my website👋</q>
@@ -24,31 +24,40 @@ function App() {
       </div>
 
     {/* About Section */}
-    <div id="about" className="tittle flex mt-32 mb-10 text-4xl mx-auto w-full justify-center primary-2 bg-clip-text font-semibold scroll-mt-40 ">About Me</div>
-    <div className="container flex justify-center p-1 primary sm:w-fit w-full mx-auto rounded-3xl " id="about">
-      <div className="in-container bg-zinc-950 rounded-3xl flex flex-col md:flex-row gradient-border hover:scale-105 smooth ">
-        <div className="description p-10 flex items-justify flex-col justify-center ">
-          <p className="text-2xl font-semibold primary bg-clip-text">
-          Full Name: </p>
-          <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Muh. Alfi Rizqy</p>
-          <p className="text-2xl font-semibold primary bg-clip-text">
-          Place & Date Birth: </p>
-          <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Watampone, 28 Mei 2007</p>
-          <p className="text-2xl font-semibold primary bg-clip-text">
-          Address: </p>
-          <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Bu Nining Kost, Beji, Depok</p>
-          <p className="text-2xl font-semibold primary bg-clip-text">
-          University: </p>
-          <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Indonesia University</p>
-          <p className="text-2xl font-semibold primary bg-clip-text">
-          Faculty: </p>
-          <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Computer Science</p>
+    <div id="about" className="tittle flex mt-32 mb-10 text-4xl mx-auto justify-center primary-2 bg-clip-text font-semibold scroll-mt-32 " data-aos="fade-down">About Me</div>
+    <div className="in-container bg-zinc-950 rounded-3xl flex flex-col md:flex-row gradient-border hover:scale-105 smooth justify-center w-full sm:w-fit mx-auto ">
+        <div className="description p-10 flex items-justify flex-col justify-center gap-2" data-aos="fade-right">
+          <div>
+            <p className="text-2xl font-semibold primary bg-clip-text">
+            Full Name: </p>
+            <p className="text-xl/loose font-semibold text-gray-500 whitespace-pre">Muh. Alfi Rizqy</p>
+          </div>
+          <div>
+            <p className="text-2xl font-semibold primary bg-clip-text">
+            Place & Date Birth</p>
+            <p className="text-xl/loose font-semibold text-gray-500">Watampone, 28 Mei 2007  </p>
+          </div>
+          <div>
+            <p className="text-2xl font-semibold primary bg-clip-text">
+            Address: </p>
+            <p className="text-xl/loose font-semibold text-gray-500 ">Bu Nining Kost, Beji, Depok</p>
+          </div>
+          <div>
+            <p className="text-2xl font-semibold primary bg-clip-text">
+            University: </p>
+            <p className="text-xl/loose font-semibold text-gray-500 ">Indonesia University</p>
+          </div>
+          <div>
+            <p className="text-2xl font-semibold primary bg-clip-text">
+            Faculty: </p>
+            <p className="text-xl/loose font-semibold text-gray-500">Computer Science</p>
+          </div>
         </div>
-        <div className="flex md:items-center justify-center px-5">
+        <div className="flex md:items-center justify-center px-5" data-aos="fade-left">
           <img src={DataImage.AboutImage} alt="" className="w-80 p-3 mb-7 lg:mb-0 hover:scale-105 smooth spin" />
         </div>
-      </div>
     </div>
+    
 
 
     {/* Projects   Section */}

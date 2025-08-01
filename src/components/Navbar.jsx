@@ -23,7 +23,7 @@ const Navbar = () => {
     }, [] );
 
   return (
-    <header className={` bg-transparent  top-0 left-0 w-full flex z-50 transition-all duration-300 ease-in-out ${active? "fixed bg-zinc-950 gradient-border my-3 rounded-3xl mx-auto flex justify-center px-4":""}`}>
+    <header className={` bg-transparent  top-0 left-0 w-full flex z-40 transition-all duration-300 ease-in-out ${active? "fixed bg-zinc-950 gradient-border my-3 rounded-3xl mx-auto flex justify-center px-4":""}`}>
         <div className={`container ${active? "":""}`}>
             <div className="flex items-center justify-between relative w-full">
                 <div className="px-4">
@@ -40,7 +40,7 @@ const Navbar = () => {
                         <span className={`hamburger-line origin-bottom-left  ${hamburgerActive? "hamburger-active-3 bg-red-700":""}`}></span>
                     </button>
                 </div>
-                <nav className={`lg:block lg:static lg:max-w-full z-50 ${menuActive? "block absolute py-3 bg-zinc-950 shadow-pink-500 shadow-sm rounded-lg max-w-[200px] w-full right-4 top-full gradient-border":"hidden"}`}>
+                <nav className={`lg:block lg:static lg:max-w-full z-40 ${menuActive? "block absolute py-3 bg-zinc-950 shadow-pink-500 shadow-sm rounded-lg max-w-[200px] w-full right-4 top-full gradient-border":"hidden"}`}>
                     <ul className="block lg:flex">
                         <li className="group">
                             <a href="#about" className="text-lg font-semibold py-1 px-5 group-hover:primary hover:scale-105 smooth bg-clip-text flex"><i className="ri-user-fill"></i>About</a>

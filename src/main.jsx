@@ -7,12 +7,19 @@ import Projects from './components/Projects.jsx'
 import Achievements from './components/Achievements.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import Loading from './components/Loading.jsx'
 
+import 'animate.css';
 import 'remixicon/fonts/remixicon.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='container mx-auto px-4'>
+    <Loading/>
+    <div className='container mx-auto px-4 overflow-x-hidden'>
       <Navbar/>
       <App />
       <Projects/>
