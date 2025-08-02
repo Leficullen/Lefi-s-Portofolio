@@ -10,20 +10,20 @@ const Projects = () => {
         <div className="container group">
             <div className="project-box grid lg:grid-cols-3 grid-cols-1 gap-10 lg:gap-0 bg-zinc-950 gradient-border-container p-5 py-10 rounded-2xl" data-aos="fade-up">
             {listProyek.map((proyek)=> (
-                <div key={proyek.id} className=" bg-zinc-900 rounded-xl mx-5 hover:scale-105 smooth border-3 border-zinc-900 hover:border-3 hover:border-white">
+                <div key={proyek.id} className=" bg-zinc-900 rounded-xl mx-5 hover:scale-105 smooth border-3 border-zinc-900 hover:border-3 hover:border-white p-1">
                 <img src={proyek.gambar} alt="" className="rounded-xl " />
-                <div>
-                    <h2 className="flex justify-center pt-5 pb-3 text-2xl font-semibold primary bg-clip-text" data-aos="fade-up">{proyek.nama}</h2>
-                    <p className="flex text-center justify-center text-gray-300 pb-5" data-aos="fade-up">{proyek.desk}</p>
+                <div data-aos="fade-up">
+                    <h2 className="flex justify-center pt-5 pb-3 text-2xl font-semibold primary bg-clip-text">{proyek.nama}</h2>
+                    <p className="flex text-center justify-center text-gray-300 pb-5">{proyek.desk}</p>
                     <div className="flex flex-wrap">
                     {proyek.tools.map((tool, index) =>(
-                        <p key={index} className="px-3 hover:scale-110 smooth gradient-border rounded-md font-semibold mx-auto justify-center flex mb-5" data-aos="fade-up">{tool}</p>
+                        <p key={index} className="px-3 hover:scale-110 smooth gradient-border rounded-md font-semibold mx-auto justify-center flex mb-5">{tool}</p>
                     ))}
                     </div>
-                    <div className="flex justify-center mb-3 bg-zinc-800 rounded-sm px-5 py-1 font-semibold mx-auto w-fit hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 hover:scale-105 smooth shadow-xl" data-aos="fade-up">
+                    <div className="flex justify-center mb-3 bg-zinc-800 rounded-sm px-5 py-1 font-semibold mx-auto w-fit hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 hover:scale-105 smooth shadow-xl">
                     <a href={proyek.view} target="_blank" className="">Visit <i className="ri-eye-line"></i></a>
                     </div>
-                    <p className="justify-center flex mb-5 text-red-500" data-aos="fade-up">{proyek.status}</p>
+                    <p className="justify-center flex mb-5 text-red-500">{proyek.status}</p>
                 </div>
                 </div>              
             ))}

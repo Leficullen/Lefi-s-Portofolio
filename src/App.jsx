@@ -14,7 +14,7 @@ function App() {
           </div>
           <h1 className="text-5xl/tight font-semibold relative bg-zinc-900 w-fit rounded-xl primary bg-clip-text text-align-center mx-auto lg:mx-0 mb-3 hover:scale-105 smooth text-center md:text-left"> Hello, I'm Lefi!</h1>
           <div className="mb-5">
-            <p className="text-xl text-gray-500 text-center lg:text-left ">I'm a software engineer and a New Student of Indonesia University with Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore excepturi totam quis tempora, autem numquam itaque molestiae iure. Explicabo facere nisi omnis illo similique, assumenda optio dolorum ipsum laudantium minima? </p>
+            <p className="text-xl text-gray-500 text-center lg:text-left ">I'm a software engineering enthusiast and a new student at Indonesia University who’s passionate about building modern and responsive websites. I love turning ideas into real digital experiences, exploring new technologies, and continuously improving my skills. Whether it's coding, designing, or collaborating in a team, I always excited to learn and grow in the world of tech!</p>
           </div>
           <div className="bg-zinc-800 w-fit p-3 rounded-md  hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 smooth hover:scale-105 mx-auto lg:mx-0 font-semibold shadow-xl" >
             <a href="#about" className="">Explore Me! <i className="ri-arrow-down-double-fill ri-lg"></i></a>

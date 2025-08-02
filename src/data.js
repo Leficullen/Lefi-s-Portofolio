@@ -17,7 +17,7 @@ export const listProyek = [
     id: 1,
     gambar: Proyek2,
     nama: "SEA - Catering",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    desk: "A Responsive website of catering service company (Selection Task of SEA Compfest-17)",
     tools: ["HTML", "CSS", "Javascript", "PHP"],
     view: "https://github.com/Leficullen/SEA-Catering",
     status: "(Hosting Expired)",
