@@ -15,24 +15,25 @@ import Proyek3 from "/assets/proyek/proyek3.webp";
 export const listProyek = [
   {
     id: 1,
+    gambar: Proyek2,
+    nama: "SEA - Catering",
+    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
+    tools: ["HTML", "CSS", "Javascript", "PHP"],
+    view: "https://github.com/Leficullen/SEA-Catering",
+    status: "(Hosting Expired)",
+    dad: "200",
+  },
+  {
+    id: 2,
     gambar: Proyek1,
     nama: "D Class Portfolio",
     desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
     tools: ["Google Site"],
     view: "https://sites.google.com/view/portofolio-informatika-alfi-3/home",
     status: "",
-    dad: "200",
-  },
-  {
-    id: 2,
-    gambar: Proyek2,
-    nama: "SEA-Catering",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "PHP"],
-    view: "https://github.com/Leficullen/SEA-Catering",
-    status: "(Hosting Expired)",
     dad: "300",
   },
+
   {
     id: 3,
     gambar: Proyek3,
