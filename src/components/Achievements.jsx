@@ -7,7 +7,7 @@ const Achievements = () => {
 
     return (
         <div>
-            <div id="achievements" className="mt-32  text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-40 mb-10" data-aos="fade-down"> My Achievements
+            <div id="achievements" className="mt-32  text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-40 mb-10 text-center" data-aos="fade-down"> My Achievements
             </div>
                 <div className="container">
                     <div className="achievement-box grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid bg-zinc-950 p-5 gradient-border-container" data-aos="fade-up">{visibleAchievements.map((achievement) => (

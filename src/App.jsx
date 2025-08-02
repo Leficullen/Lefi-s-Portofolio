@@ -9,10 +9,10 @@ function App() {
         <div className="justify-center flex-col flex ">
           <div className="p-1 primary w-fit rounded-md h-fit my-3 lg:mx-0 mx-auto hover:scale-105 transition-all ease-in-out duration-300">
             <div className="bg-zinc-800 w-fit p-3 rounded-md">
-              <q className="text-xl text-white">Welcome to my website👋</q>
+              <q className="text-xl text-white">Welcome to my Portfolio👋</q>
             </div>
           </div>
-          <h1 className="text-5xl/tight font-semibold relative bg-zinc-900 w-fit rounded-xl primary bg-clip-text text-align-center mx-auto lg:mx-0 mb-3 hover:scale-105 smooth"> Hello, I'm Lefi!</h1>
+          <h1 className="text-5xl/tight font-semibold relative bg-zinc-900 w-fit rounded-xl primary bg-clip-text text-align-center mx-auto lg:mx-0 mb-3 hover:scale-105 smooth text-center md:text-left"> Hello, I'm Lefi!</h1>
           <div className="mb-5">
             <p className="text-xl text-gray-500 text-center lg:text-left ">I'm a software engineer and a New Student of Indonesia University with Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore excepturi totam quis tempora, autem numquam itaque molestiae iure. Explicabo facere nisi omnis illo similique, assumenda optio dolorum ipsum laudantium minima? </p>
           </div>
@@ -58,13 +58,13 @@ function App() {
         </div>
     </div>
     
-
-
     {/* Projects   Section */}
 
     {/* Achievement Section */}
 
     {/* Contact Section */}
+
+    {/* Footer Section */}
     </>
     
   )

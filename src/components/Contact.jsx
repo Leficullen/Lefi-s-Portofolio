@@ -7,15 +7,15 @@ const Contact = () => {
             <div className="flex justify-center ">
                 <form action="https://formsubmit.co/alfirizqy2007@gmail.com" method="POST" className="flex flex-col justify-center sm:w-fit w-full bg-zinc-950 p-10 rounded-xl gradient-border-container gap-3" autoComplete="off" data-aos="zoom-in">
                     <div className="flex flex-col gap-1">
-                        <label htmlFor="" className="font-semibold primary-2 bg-clip-text text-xl">Full Name</label>
-                        <input type="text" name="Name" placeholder="Enter your name here..." className="border border-zinc-600 rounded-md p-2" required />
+                        <label htmlFor="name" className="font-semibold primary-2 bg-clip-text text-xl">Full Name</label>
+                        <input type="text" name="Name" id="name" placeholder="Enter your name here..." className="border border-zinc-600 rounded-md p-2" required />
                     </div>
                     <div className="flex flex-col gap-1">
-                        <label htmlFor="" className="font-semibold primary-2 bg-clip-text text-xl">Email</label>
-                        <input type="text" name="E-mail" placeholder="Enter your e-mail here..." className="border border-zinc-600 rounded-md p-2" required />
+                        <label htmlFor="email" className="font-semibold primary-2 bg-clip-text text-xl">Email</label>
+                        <input type="text" name="E-mail" id="email" placeholder="Enter your e-mail here..." className="border border-zinc-600 rounded-md p-2" required />
                     </div>
                     <div className="flex flex-col gap-1">
-                        <label htmlFor="" className="font-semibold primary-2 bg-clip-text text-xl">Message</label>
+                        <label htmlFor="message" className="font-semibold primary-2 bg-clip-text text-xl">Message</label>
                         <textarea name="Message" id="message" cols="35" rows="5" placeholder="Enter your message here..." className="border border-zinc-600 rounded-md p-2" required></textarea>
                     </div>
                     <div>

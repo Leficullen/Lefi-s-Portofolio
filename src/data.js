@@ -1,5 +1,5 @@
 import HeroImage from "/assets/hero-img.webp";
-import AboutImage from "/assets/about-img.png";
+import AboutImage from "/assets/about-img.webp";
 
 const Image = {
   HeroImage, AboutImage
@@ -7,9 +7,9 @@ const Image = {
 
 export default Image;
 
-import Proyek1 from "/assets/proyek/proyek1.png";
-import Proyek2 from "/assets/proyek/proyek2.png";
-import Proyek3 from "/assets/proyek/proyek3.png";
+import Proyek1 from "/assets/proyek/proyek1.webp";
+import Proyek2 from "/assets/proyek/proyek2.webp";
+import Proyek3 from "/assets/proyek/proyek3.webp";
 
 
 export const listProyek = [
@@ -97,9 +97,9 @@ export const listVideo = [
   },
 ];
 
-import Graphic1 from "/assets/graphic/graphic1.png";
-import Graphic2 from "/assets/graphic/graphic2.png";
-import Graphic3 from "/assets/graphic/graphic3.png";
+import Graphic1 from "/assets/graphic/graphic1.webp";
+import Graphic2 from "/assets/graphic/graphic2.webp";
+import Graphic3 from "/assets/graphic/graphic3.webp";
 
 export const listGraphic = [
   {
@@ -125,16 +125,16 @@ export const listGraphic = [
   }
 ]
 
-import Achievement1 from "/assets/achievements/achievement1.jpg";
-import Achievement2 from "/assets/achievements/achievement2.jpg";
-import Achievement4 from "/assets/achievements/achievement4.jpg";
-import Achievement5 from "/assets/achievements/achievement5.jpg";
-import Achievement6 from "/assets/achievements/achievement6.jpg";
-import Achievement7 from "/assets/achievements/achievement7.jpg";
-import Achievement11 from "/assets/achievements/achievement11.jpg";
-import Achievement12 from "/assets/achievements/achievement12.jpg";
-import Achievement13 from "/assets/achievements/achievement13.jpg";
-import Achievement15 from "/assets/achievements/achievement15.jpg";
+import Achievement1 from "/assets/achievements/achievement1.webp";
+import Achievement2 from "/assets/achievements/achievement2.webp";
+import Achievement4 from "/assets/achievements/achievement4.webp";
+import Achievement5 from "/assets/achievements/achievement5.webp";
+import Achievement6 from "/assets/achievements/achievement6.webp";
+import Achievement7 from "/assets/achievements/achievement7.webp";
+import Achievement11 from "/assets/achievements/achievement11.webp";
+import Achievement12 from "/assets/achievements/achievement12.webp";
+import Achievement13 from "/assets/achievements/achievement13.webp";
+import Achievement15 from "/assets/achievements/achievement15.webp";
 
 export const listAchievement = [
   {
