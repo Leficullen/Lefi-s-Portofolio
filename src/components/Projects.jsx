@@ -35,9 +35,9 @@ const Projects = () => {
             {listVideo.map((video) => (
             <div key={video.id} className="rounded-xl bg-zinc-900 m-3 hover:scale-105 smooth border-2 border-zinc-900 hover:border-2 hover:border-white" >
                 <video src={video.tampilan} autoPlay muted loop playsInline className="lg:w-[400px] w-full  rounded-xl"></video>
-                <div>
-                <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3 text-center" data-aos="fade-up">{video.nama}</h2>
-                <p className="text-gray-500 justify-center text-center flex pb-5" data-aos="fade-up">{video.desk}</p>
+                <div data-aos="fade-up">
+                <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3 text-center">{video.nama}</h2>
+                <p className="text-gray-500 justify-center text-center flex pb-5">{video.desk}</p>
                 </div>
             </div>
             ))}
@@ -49,9 +49,9 @@ const Projects = () => {
             {listGraphic.map((graphic) => (
             <div key={graphic.id} className="rounded-xl bg-zinc-900 mx-3 scale-90 hover:scale-95 smooth border-3 border-zinc-900 hover:border-3 hover:border-white">
                 <img src={graphic.tampilan} alt="" className="rounded-xl" />
-                <div>
-                <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3" data-aos="fade-up">{graphic.nama}</h2>
-                <p className="text-gray-500 justify-center text-center flex pb-5" data-aos="fade-up">{graphic.desk}</p>
+                <div data-aos="fade-up">
+                <h2 className="primary bg-clip-text font-semibold text-xl justify-center flex pt-5 pb-3">{graphic.nama}</h2>
+                <p className="text-gray-500 justify-center text-center flex pb-5">{graphic.desk}</p>
                 </div>
             </div>
             ))}
