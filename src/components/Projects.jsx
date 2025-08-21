@@ -20,7 +20,7 @@ const Projects = () => {
                         <p key={index} className="px-3 hover:scale-110 smooth gradient-border rounded-md font-semibold mx-auto justify-center flex mb-5">{tool}</p>
                     ))}
                     </div>
-                    <div className="flex justify-center mb-3 bg-zinc-800 rounded-sm px-5 py-1 font-semibold mx-auto w-fit hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 hover:scale-105 smooth shadow-xl">
+                    <div className="flex justify-center mb-3 bg-zinc-800 rounded-sm px-5 py-1 font-semibold mx-auto w-fit hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 hover:scale-105 smooth shadow-xl border-2 border-zinc-700">
                     <a href={proyek.view} target="_blank" className="">Visit <i className="ri-eye-line"></i></a>
                     </div>
                     <p className="justify-center flex mb-5 text-red-500">{proyek.status}</p>

@@ -1,10 +1,11 @@
 import DataImage from "./data";
 
+
 function App() {
   return (
     <>
     {/* Hero Section */}
-      <div className="flex flex-col lg:flex-row justify-center gap-8 animate__animated animate__fadeInUp animate__delay-2s smooth ">
+      <div className="flex flex-col lg:flex-row justify-center gap-8 animate__animated animate__fadeInUp animate__delay-2s smooth mt-15 ">
         <img src={DataImage.HeroImage} alt="" className="w-[500px] md:mr-auto mx-auto my-auto flex hover:scale-105 smooth "/>
         <div className="justify-center flex-col flex ">
           <div className="p-1 primary w-fit rounded-md h-fit my-3 lg:mx-0 mx-auto hover:scale-105 transition-all ease-in-out duration-300">
@@ -14,9 +15,9 @@ function App() {
           </div>
           <h1 className="text-5xl/tight font-semibold relative bg-zinc-900 w-fit rounded-xl primary bg-clip-text text-align-center mx-auto lg:mx-0 mb-3 hover:scale-105 smooth text-center md:text-left"> Hello, I'm Lefi!</h1>
           <div className="mb-5">
-            <p className="text-xl text-gray-500 text-center lg:text-left ">I'm a software engineering enthusiast and a new student at Indonesia University who’s passionate about building modern and responsive websites. I love turning ideas into real digital experiences, exploring new technologies, and continuously improving my skills. Whether it's coding, designing, or collaborating in a team, I always excited to learn and grow in the world of tech!</p>
+            <p className="text-xl text-gray-500 text-center lg:text-left ">I'm a software engineering enthusiast and a new student at Universitas Indonesia who’s passionate about building modern and responsive websites. I love turning ideas into real digital experiences, exploring new technologies, and continuously improving my skills. Whether it's coding, designing, or collaborating in a team, I always excited to learn and grow in the world of tech!</p>
           </div>
-          <div className="bg-zinc-800 w-fit p-3 rounded-md  hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 smooth hover:scale-105 mx-auto lg:mx-0 font-semibold shadow-xl" >
+          <div className="bg-zinc-800 w-fit p-3 rounded-md  hover:bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 smooth hover:scale-105 mx-auto lg:mx-0 font-semibold shadow-xl border-zinc-700 border-2" >
             <a href="#about" className="">Explore Me! <i className="ri-arrow-down-double-fill ri-lg"></i></a>
 
           </div>
@@ -45,7 +46,7 @@ function App() {
           <div>
             <p className="text-2xl font-semibold primary bg-clip-text">
             University: </p>
-            <p className="text-xl/loose font-semibold text-gray-500 ">Indonesia University</p>
+            <p className="text-xl/loose font-semibold text-gray-500 ">Universitas Indonesia</p>
           </div>
           <div>
             <p className="text-2xl font-semibold primary bg-clip-text">

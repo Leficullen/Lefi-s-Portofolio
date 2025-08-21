@@ -2,12 +2,13 @@ import {useState, useEffect} from "react";
 
 const Navbar = () => {
     const [active, setActive] = useState(false);
+    const [noScroll, setNoScroll] = useState(false);
     const [hamburgerActive, setHamburgerActive] = useState(false);
     const [menuActive, setMenuActive] = useState(false);
 
     useEffect (()=> {
         const handleScroll = ()=> {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 50) {
                 setActive(true);
             } else {
                 setActive(false);
@@ -23,8 +24,8 @@ const Navbar = () => {
     }, [] );
 
   return (
-    <header className={` bg-transparent  top-0 left-0 w-full flex z-40 transition-all duration-300 ease-in-out ${active? "fixed bg-zinc-950 gradient-border my-3 rounded-3xl mx-auto flex justify-center px-4":""}`}>
-        <div className={`container ${active? "":""}`}>
+    <header className={` fixed top-0 left-0 bg-transparent translate-y-0 rounded-3xl mx-auto flex justify-center w-full z-40 smooth duration-500  ${active? "fixed bg-zinc-950 gradient-border translate-y-3 rounded-3xl mx-auto flex justify-center ":""}` }>
+        <div className={`container  ${active? "":""}`}>
             <div className="flex items-center justify-between relative w-full">
                 <div className="px-4">
                     <a href="#" className="primary bg-clip-text font-semibold md:text-3xl text-2xl py-5 block hover:scale-105 smooth"> Leficullen</a>
