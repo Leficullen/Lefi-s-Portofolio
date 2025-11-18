@@ -1,7 +1,7 @@
 const Contact = () => {
     return (
     <div>
-        <div>
+        {/* <div>
             <div id="contact" className="mt-32  text-4xl font-semibold primary-2 bg-clip-text justify-center flex scroll-mt-32 mb-10" data-aos="fade-down"> Contact Me
             </div>
             <div className="flex justify-center ">
@@ -23,7 +23,7 @@ const Contact = () => {
                     </div>
                 </form>
             </div>
-        </div>
+        </div> */}
     </div>
 );
 }
